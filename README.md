@@ -8,6 +8,7 @@ Tentu! Berikut versi yang lebih santai dan gaul dalam bahasa Indonesia:
 ```bash
 git clone https://github.com/momovellia/minting-nft-monad-ME.git
 ```
+
 ```bash
 cd minting-nft-monad-ME
 ```
@@ -30,7 +31,7 @@ PRIVATEKEY=0x...
 
 ## 3. SETUP AND RUNNING
 
-1. **Setup .env**
+1. Setup .env
    Jalankan perintah berikut untuk setup:
 
 ```bash
