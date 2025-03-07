@@ -25,7 +25,7 @@ Lanjutkan dengan konfigurasi wallet kamu:
 
 1. Buka file `.env`
 2. Tambahkan private key kamu di dalam file tersebut:
-PRIVATEKEY=0x...
+WALLET_1=0x...
 
 ## 3. SETUP AND RUNNING
 
