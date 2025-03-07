@@ -44,7 +44,7 @@ npm run setup
 npm start
 ```
 
-Kamu bakal dibawa ke beberapa pertanyaan interaktif, seperti:
+seting mint dicommand, seperti:
 
 1. Pilih antara **Instant Mint** atau **Scheduled Mint**.
 2. Masukkan alamat kontrak NFT atau link Magic Eden yang kalian inginkan
