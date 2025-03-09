@@ -27,29 +27,17 @@ const loadWallets = () => {
 };
 const displayBanner = () => {
   console.log(chalk.green(`
-▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄       ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄   ▄         ▄ 
-▐░░░░░░░░░░░▌▐░▌       ▐░▌     ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░▌       ▐░▌
- ▀▀▀▀█░█▀▀▀▀ ▐░▌       ▐░▌     ▐░▌       ▐░▌ ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌
-     ▐░▌     ▐░▌       ▐░▌     ▐░▌       ▐░▌     ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌
-     ▐░▌     ▐░█▄▄▄▄▄▄▄█░▌     ▐░▌   ▄   ▐░▌     ▐░▌     ▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌
-     ▐░▌     ▐░░░░░░░░░░░▌     ▐░▌  ▐░▌  ▐░▌     ▐░▌     ▐░░░░░░░░░░▌ ▐░▌       ▐░▌
-     ▐░▌     ▐░█▀▀▀▀▀▀▀█░▌     ▐░▌ ▐░▌░▌ ▐░▌     ▐░▌     ▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌
-     ▐░▌     ▐░▌       ▐░▌     ▐░▌▐░▌ ▐░▌▐░▌     ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌
- ▄▄▄▄█░█▄▄▄▄ ▐░▌       ▐░▌     ▐░▌░▌   ▐░▐░▌ ▄▄▄▄█░█▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌
-▐░░░░░░░░░░░▌▐░▌       ▐░▌     ▐░░▌     ▐░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌
- ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀       ▀▀       ▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀ 
-                                                                                    
- ▄▄       ▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄       ▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
-▐░░▌     ▐░░▌▐░░░░░░░░░░░▌▐░░▌     ▐░░▌▐░░░░░░░░░░░▌
-▐░▌░▌   ▐░▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌░▌   ▐░▐░▌▐░█▀▀▀▀▀▀▀█░▌
-▐░▌▐░▌ ▐░▌▐░▌▐░▌       ▐░▌▐░▌▐░▌ ▐░▌▐░▌▐░▌       ▐░▌
-▐░▌ ▐░▐░▌ ▐░▌▐░▌       ▐░▌▐░▌ ▐░▐░▌ ▐░▌▐░▌       ▐░▌
-▐░▌  ▐░▌  ▐░▌▐░▌       ▐░▌▐░▌  ▐░▌  ▐░▌▐░▌       ▐░▌
-▐░▌   ▀   ▐░▌▐░▌       ▐░▌▐░▌   ▀   ▐░▌▐░▌       ▐░▌
-▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌
-▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄█░▌
-▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌
- ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀ 
+▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄            ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄   
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌▐░░░░░░░░░░▌  
+▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌          ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌ 
+▐░▌       ▐░▌▐░▌          ▐░▌          ▐░▌          ▐░▌       ▐░▌ 
+▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌          ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌ 
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌▐░░░░░░░░░░▌  
+▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌          ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀█░█▀▀  
+▐░▌          ▐░▌          ▐░▌          ▐░▌          ▐░▌     ▐░▌   
+▐░▌          ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌      ▐░▌  
+▐░▌          ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌ 
+ ▀            ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀
 
  
   `));
@@ -69,6 +57,18 @@ const extractContractAddress = (input) => {
   }
 
   return null;
+};
+
+// Function to format countdown time
+const formatCountdown = (milliseconds) => {
+  let seconds = Math.floor(milliseconds / 1000);
+  let minutes = Math.floor(seconds / 60);
+  let hours = Math.floor(minutes / 60);
+  
+  seconds = seconds % 60;
+  minutes = minutes % 60;
+  
+  return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 };
 
 async function main() {
@@ -131,6 +131,83 @@ async function main() {
     });
 
     mintPrice = ethers.utils.parseEther(manualPrice.toString());
+  }
+
+  // Handle Scheduled Mint
+  if (mintOptions.mintOption === "⏳ Scheduled Mint") {
+    const scheduleTimeFormat = await inquirer.prompt({
+      type: "list",
+      name: "format",
+      message: "⏰ Select schedule time format:",
+      choices: ["Date and Time", "Countdown (seconds)"],
+      prefix: "❓",
+    });
+    
+    let targetTime;
+    let waitTimeInMs;
+    
+    if (scheduleTimeFormat.format === "Date and Time") {
+      const scheduleInput = await inquirer.prompt({
+        type: "input",
+        name: "scheduleTime",
+        message: "⏰ Enter schedule time (YYYY-MM-DD HH:MM:SS):",
+        validate: (input) => {
+          const date = new Date(input);
+          return !isNaN(date.getTime()) ? true : "❌ Please enter valid date and time";
+        },
+        prefix: "❓",
+      });
+      
+      targetTime = new Date(scheduleInput.scheduleTime);
+      waitTimeInMs = targetTime.getTime() - new Date().getTime();
+    } else {
+      const countdownInput = await inquirer.prompt({
+        type: "input",
+        name: "seconds",
+        message: "⏰ Enter countdown in seconds:",
+        validate: (input) => {
+          const seconds = parseInt(input);
+          return !isNaN(seconds) && seconds > 0 ? true : "❌ Please enter valid number of seconds";
+        },
+        prefix: "❓",
+      });
+      
+      waitTimeInMs = parseInt(countdownInput.seconds) * 1000;
+      targetTime = new Date(new Date().getTime() + waitTimeInMs);
+    }
+    
+    if (waitTimeInMs <= 0) {
+      helpers.log.warning("⚠️ Scheduled time is in the past or now, executing immediately");
+    } else {
+      helpers.log.info(`⏳ Scheduled to mint at: ${targetTime.toLocaleString()}`);
+      helpers.log.info(`⏳ Waiting for ${Math.floor(waitTimeInMs/1000)} seconds...`);
+      
+      // Display countdown
+      const startTime = new Date().getTime();
+      const endTime = startTime + waitTimeInMs;
+      
+      // Setup interval to show countdown
+      const intervalId = setInterval(() => {
+        const now = new Date().getTime();
+        const remainingTime = endTime - now;
+        
+        if (remainingTime <= 0) {
+          clearInterval(intervalId);
+          return;
+        }
+        
+        process.stdout.write(`\r⏳ Time remaining: ${formatCountdown(remainingTime)}`);
+      }, 1000);
+      
+      // Wait for scheduled time
+      await new Promise(resolve => setTimeout(() => {
+        clearInterval(intervalId);
+        process.stdout.write("\r                                                  \r");
+        resolve();
+      }, waitTimeInMs));
+      
+      helpers.log.info("⏰ Schedule time reached! Starting mint process...");
+    }
   }
 
   const latestBlock = await provider.getBlock("latest");
